@@ -1,0 +1,43 @@
+##For Intellij IDEA
+*.iml
+.idea/
+
+##Temp files
+*~
+
+## Eclipse IDE
+.project
+.settings/
+distribution/.project
+distribution/.settings/
+
+##No Traget Files
+**/target
+Thumbs.db
+
+##Netbeans IDE
+nb-configuration.xml
+nb_jr_remoting.cfg
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
