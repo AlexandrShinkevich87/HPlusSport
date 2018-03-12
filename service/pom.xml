@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>eshop</groupId>
+        <artifactId>HPlusSport</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <packaging>jar</packaging>
+
+    <groupId>eshop</groupId>
+    <artifactId>service</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>service</name>
+    <properties>
+        <skipTests>true</skipTests>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>eshop</groupId>
+            <artifactId>domain</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>eshop</groupId>
+            <artifactId>repository</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.10</version>
+                <configuration>
+                    <skipTests>${skipTests}</skipTests>
+                    <additionalClasspathElements>
+                        <additionalClasspathElement>${basedir}/src/main/webapp
+                        </additionalClasspathElement>
+                    </additionalClasspathElements>
+                    <argLine>
+                        -Djava.naming.factory.initial=org.apache.naming.java.javaURLContextFactory
+                        -Djava.naming.factory.url.pkgs=org.apache.naming
+                    </argLine>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    
+</project>
