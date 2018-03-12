@@ -13,6 +13,9 @@ Orders - to store order history of a particular user
 
 Types of HTTP Requests
 GET - get or retrieve information from the server side
+    Data sent along is a query string visible in URL, hence insecure request.
+    Data limit 8KB, with a few caveats because that would depend upon the browser and the server configuration.
+    Idempotent - would not change anything on server side if request is sent out multiple times. 
 POST - process or manipulate information on the server side (change the data on the server side)
 PUT - upload the definition of a resource on the server. 
 DELETE - delete a resource from the server
