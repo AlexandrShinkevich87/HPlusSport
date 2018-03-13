@@ -157,7 +157,7 @@
             <id>prod-oracle</id>
             <activation>
                 <property>
-                    <name>spring.profiles.active</name>
+                    <name>profiles.active</name>
                     <value>prod-oracle</value>
                 </property>
             </activation>
@@ -173,7 +173,7 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
                 <property>
-                    <name>spring.profiles.active</name>
+                    <name>profiles.active</name>
                     <value>h2</value>
                 </property>
             </activation>
