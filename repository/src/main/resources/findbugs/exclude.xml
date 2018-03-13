@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!--
+  This file contains some false positive bugs detected by Findbugs. Their
+  false positive nature has been analyzed individually and they have been
+  put here to instruct Findbugs to ignore them.
+-->
+<!--suppress XmlUnboundNsPrefix -->
+
+<FindBugsFilter>
+
+    <!-- Empty password is used by default -->
+    <Match>
+        <Class name="eshop.dao.DBConnection"/>
+        <Method name="getConnectionToDatabase"/>
+        <Bug pattern="DMI_EMPTY_DB_PASSWORD"/>
+    </Match>
+</FindBugsFilter>
