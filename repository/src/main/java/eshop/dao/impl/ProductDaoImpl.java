@@ -35,9 +35,9 @@ public class ProductDaoImpl implements ProductDao {
 
                     while (set.next()) {
                         product = new Product();
-                        product.setId(set.getInt("product_id"));
+                        product.setId(set.getInt("id"));
                         product.setImgPath(set.getString("image_path"));
-                        product.setName(set.getString("product_name"));
+                        product.setName(set.getString("name"));
                         products.add(product);
 
                     }
