@@ -39,3 +39,7 @@ What it essentially does is, it is going to combine the response of this login s
 
 RequestDispatcher. 
 It's basically used to forward the control from one resource to another resource, but do not forget it is inside the same application. And in this entire process, the browser will play no part. Entirely, it's managed by the server site. This approach is very commonly used in a framework called Struts, where whenever you click on a hyperlink, you always go to an action class and from the action class, the request is dispatched to a JSP. That way, we are always safe, and we never reveal any of our folder details in the URL. 
+
+Redirection on Servlet API
+it means we are handing over the control outside the current application context.
+So this feature in which you are navigating out of your application and moving on altogether to a new application is the concept of redirection in servlet specification.
