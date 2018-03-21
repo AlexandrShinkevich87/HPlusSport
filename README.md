@@ -43,3 +43,7 @@ It's basically used to forward the control from one resource to another resource
 Redirection on Servlet API
 it means we are handing over the control outside the current application context.
 So this feature in which you are navigating out of your application and moving on altogether to a new application is the concept of redirection in servlet specification.
+
+ServletConfig API
+This is the one which is used to pass any kind of configuration information to a particular servlet.
+For each servlet that you have in your application, there is one ServletConfig object created with respect to it. So there's one ServletConfig instance per servlet class.
